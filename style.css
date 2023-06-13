@@ -1,0 +1,156 @@
+:root{
+ --mainColor:linear-gradient(90deg, #0033e9 0%, #80d0c7 100%) ;  
+ --secondColor: #004953;
+ --thirdColor: #ffff;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    background: var(--mainColor);
+    margin-top: 5%;
+   
+}
+.container{
+    height: 100%;
+    width: 400px;
+   
+    background-color: var(--thirdColor);
+    border-radius: 20px;
+}
+h1{
+    background-color: var(--secondColor);
+    color: var(--thirdColor);
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font: 900;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    text-align: center;
+    margin: 0;
+}
+p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+#totalTip{
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-align: center;
+}
+#totalTip sup{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.billAmountInput{
+    display: flex;
+    justify-content: center;
+}
+.service{
+    display: flex;
+    justify-content: center;
+}
+.peopleAmtInput{
+    display: flex;
+    justify-content: center;
+}
+.billAmt{
+    padding: 10px;
+    outline: none;
+}
+#serviceSelector{
+    padding: 10px;
+    /* outline: none;  */
+}
+#serviceSelector:focus{
+    border: 3px solid var(--secondColor );
+    outline: none;
+}
+
+.billAmt:focus{
+    border: 3px solid var(--secondColor );
+    outline: none;
+}
+.peopleAmt{
+    padding: 10px;
+}
+.peopleAm:focus{
+    border: 3px solid var(--secondColor );
+    outline: none; 
+}
+
+button{
+    display: block;
+ margin: 30px auto;
+ text-transform: uppercase;
+ background-color: var(--secondColor);
+ border-radius: 5px;
+ width: 200px;
+ height: 50px;
+ font-size: 1.2rem;
+ color: var(--thirdColor);
+}
+button:hover{
+    background-color: var(--mainColor);
+    border-bottom-color:#000;
+    /* color: var(--thirdColor); */
+}
+button:active{
+    position: relative;
+    justify-content: center;
+}
+
+@media(max-width: 600px){
+    .container{
+        height: 100%;
+        width: 95%;
+        background-color: var(--thirdColor);
+        border-radius: 20px;
+    }
+}
+
+/* // function calculatorTip(){
+    //     let billAmt = document.querySelector(".billAmt").value;
+    //     let service = document.querySelector("#serviceSelector").value;
+    //     let numOfPeople = document.querySelector(".peopleAmt").value;
+    
+    //     if(billAmt === "" || service == 0){
+    //         alert("Please enter some values")
+    //     }
+    //     if(numOfPeople === "" || numOfPeople < 1){
+    //         numOfPeople = 1;
+    //         document.getElementById('each').style.display = "none";
+    
+    //     } else {
+    //         document.getElementById('each').style.display = "block";
+    //     }
+    
+    //     let total = (billAmt * service) / numOfPeople;
+    //     total = Math.round(total * 100) / 100;
+    //     total = total.toFixed(2); 
+            
+    
+    //     document.getElementById("tip").innerHTML = total
+    //     document.getElementById("totalTip").style.display = "block";
+        
+    //  // Clear input values
+    //  document.querySelector(".billAmt").value = "";
+    //  document.querySelector("#serviceSelector").value = 0;
+    //  document.querySelector(".peopleAmt").value = "";
+    // }
+      
+    
+    // document.getElementById("totalTip").style.display = "none";
+    // document.getElementById("each").style.display = "none";
+    
+    
+    // document.getElementById("calculate").addEventListener("click", function(){
+        
+    //     calculatorTip();
+     
+    // }) */
