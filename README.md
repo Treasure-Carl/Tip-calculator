@@ -1,0 +1,1 @@
+Ìºü Exciting news! Ì¥ç We're developing a tip calculator for our restaurant project! ÌΩΩÔ∏èÌ≤° This tool will give us valuable feedback on customer experiences using our website, with a percentage rate based on total bill, party size, and service quality. Stay tuned for updates! #CustomerFeedback #RestaurantExperience #TipCalculator
